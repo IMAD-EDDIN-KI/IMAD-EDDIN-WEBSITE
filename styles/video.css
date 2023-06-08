@@ -1,0 +1,103 @@
+  .video-preview:hover .thumbnail{
+   border-radius: 3px;
+   transition: border-radius 0.3s;
+  }
+  .video-preview:hover .video-length {
+    opacity: 0;
+    transition-delay: 0.05s; 
+  }
+  .thumbnail{
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .video-title{
+    color: whitesmoke;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    cursor: pointer;
+  }
+  .profile-picture{
+    
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+
+  }
+  .video-length {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.15s ease-in-out;
+  }
+  .thumbnail-row{
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .video-author,
+  .video-stats{
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: rgb(168, 168, 168);
+  }
+  .video-author{
+    display: inline-block;
+    color: rgb(168, 168, 168);
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+  .video-author:hover {
+    color: whitesmoke;
+  }
+  .video-grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  @media (max-width:720px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (min-width:790px) and (max-width:1127px){
+    .video-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width:1630px) and (min-width:1128px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width:2100px) and (min-width:1631px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width:2101px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 790px) {
+    /* hide the sidebar */
+    .sidebar {
+      display: none;
+    }
+  }
